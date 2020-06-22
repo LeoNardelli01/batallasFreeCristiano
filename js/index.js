@@ -1,6 +1,14 @@
 $(function(){
   localStorage.clear();
 
+  var typed = new Typed('#typed', {
+  strings: ['Batallas Free Cristiano', '' ,'Torneo Online'],
+  smartBackspace: false,
+  typeSpeed: 55,
+  backSpeed: 25,
+  showCursor: false
+  });
+
   var btnComenzar = $("#btn-comenzar");
 
   btnComenzar.click(function(e){
