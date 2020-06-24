@@ -7,10 +7,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Resultados</title>
   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/fondo.ico" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -22,18 +23,87 @@
   <!-- Ecommerce styles -->
   <link rel="stylesheet" href="css/mdb.ecommerce.min.css">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/votacion.css">
+  <link rel="stylesheet" href="css/resultados.css">
 </head>
 
 <body class="row">
 
   <!-- Start your project here-->
-  <h1>mostrar resultados</h1>
-  <h1>(en construccion)</h1>
-  <a href="index.html">Volver a comenzar</a>
+    <div class="col d-none d-md-block"></div><!-- Publicidad izquierda-->
+    <div class="container-fluid col">
+
+      <nav class="navbar fixed-top">
+        <img src="img/fondo.png" height="50" alt="logo" class="img-logo">
+        <h5 class="text-white">Resultados</h5>
+      </nav>
+      <div class="jugadores row">
+        <div class="col">
+          <h6 id="p1" class="text-center text-uppercase"></h6>
+        </div>
+        <div class="col">
+          <h6 id="p2" class="text-center text-uppercase"></h6>
+        </div>
+      </div>
+      <div class="resumen row">
+        <div class="p1_resumen col">
+          <p class="text-center" id="p1_resPatrones"></p>
+          <p class="text-center" id="p1_resTecnica"></p>
+          <p class="text-center" id="p1_resFlow"></p>
+          <p class="text-center" id="p1_resPunch"></p>
+          <p class="text-center" id="p1_resDobletempo"></p>
+          <p class="text-center" id="p1_resEscena"></p>
+
+        </div>
+        <div class="col">
+          <p class="text-center">Patrones</p>
+          <p class="text-center">Técnica</p>
+          <p class="text-center">Flow</p>
+          <p class="text-center">Punch</p>
+          <p class="text-center">Doble Tempo</p>
+          <p class="text-center">P. Escena</p>
+        </div>
+
+        <div class="p2_resumen col">
+          <p class="text-center" id="p2_resPatrones"></p>
+          <p class="text-center" id="p2_resTecnica"></p>
+          <p class="text-center" id="p2_resFlow"></p>
+          <p class="text-center" id="p2_resPunch"></p>
+          <p class="text-center" id="p2_resDobletempo"></p>
+          <p class="text-center" id="p2_resEscena"></p>
+        </div>
+
+        <!-- Primer Grafico -->
+
+      </div> <!-- Fin resumen -->
+      <div class="totales row">
+        <div class="col">
+          <h5 class="text-center" id="p1_total"></h5>
+        </div>
+        <div class="col">
+          <h5 class="text-center">Final</h5>
+        </div>
+        <div class="col">
+          <h5 class="text-center" id="p2_total"></h5>
+        </div>
+      </div>
+      <div class="resultado">
+        <h1 id="resultado" class="text-center"></h1>
+      </div>
+      <canvas id="graficoRadar"></canvas>
+    <br>
+    <div class="batallometro">
+
+    </div>
+    <div class="volver text-center">
+      <button id="btn-nuevaBatalla" type="button" class="btn btn-outline-secondary btn-rounded waves-effect">Nueva Batalla</button>
+    </div>
+
+    </div>
+    <div class="col d-none d-md-block"></div><!-- Publicidad derecha-->
   <!-- End your project here-->
 
-
+  <!-- Chart.js-->
+  <script type="text/javascript" src="https://cdnjs.com/libraries/Chart.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>

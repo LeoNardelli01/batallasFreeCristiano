@@ -1,0 +1,47 @@
+body{
+  background-color: #212121;
+  width: 100vw;
+  margin: 0px !important;
+}
+p{
+  color: white !important;
+  font-weight: bold;
+  font-size: 17px;
+}
+h5{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container-fluid{
+  height: 100vh;
+  padding: 0px !important;
+}
+.navbar{
+  background-color: #212121;
+}
+.jugadores{
+  margin-top: 100px;
+}
+h6{
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px 5px white, -2px -2px 5px white 
+}
+.resumen {
+
+}
+
+.totales{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.resultado h1{
+  color: white;
+  font-family: 'Holtwood One SC', serif;
+
+}
+.volver{
+  margin-bottom: 30px;
+}

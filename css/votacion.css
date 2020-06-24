@@ -25,17 +25,25 @@ label{
   left: 50%;
   transform: translate(-50%);
 }
-.player1{
+.player1, .player2{
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 5px 5px 13px black inset, -3px -3px 13px black inset, 5px 5px 7px black;
+  border-radius: 5px;
+  margin: 2px;
 }
+#p1, #p2{
+  font-family: 'Passion One', cursive;
+  font-size: 24px;
+}
+#p1{
+  color: #0d47a1 !important;
+}
+#p2{
+  color: #d32f2f !important;
+}
+
 .patrones{
   width: 100%;
   margin: 0px !important;
-}
-.player2{
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 5px 5px 13px black inset, -3px -3px 13px black inset, 5px 5px 7px black;
 }
 .player1 h5, .player2 h5{
   margin: 20px 0px 20px 0px;
@@ -48,7 +56,7 @@ label{
   box-shadow: 5px 5px 13px black inset, -5px -5px 13px black inset;
 }
 .terminar{
-  height: 70px;
+  height: 120px;
   margin-top: 20px;
 }
 
