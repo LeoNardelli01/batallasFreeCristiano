@@ -46,15 +46,25 @@ $(function(){
   $("#p1_total").html(p1_total);
   $("#p2_total").html(p2_total);
 
+  function difTotales(player1, player2){
+    if (player1 > player2) {
+      return player1 - player2;
+    } else{
+      return player2 - player1;
+    }
+  }
 
-  if (p1_total > p2_total) {
+  var difTotales = difTotales(p1_total, p2_total);
+  console.log(difTotales);
+
+  if (difTotales <= 3) {
+    $("#resultado").html('Réplica');
+  } else if (p1_total > p2_total) {
     $("body").css('background', 'blue');
     $("#resultado").html("Ganó " + p1);
-  } else if (p1_total < p2_total){
+  } else {
     $("body").css('background', 'red');
     $("#resultado").html("Ganó " + p2);
-  } else{
-    $("#resultado").html('Réplica');
   }
 
 
