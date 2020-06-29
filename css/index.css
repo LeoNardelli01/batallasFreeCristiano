@@ -19,6 +19,10 @@ body{
 h5{
   text-shadow: 2px 2px 5px #ff3d00;
 }
+p {
+  margin-bottom: 0px !important;
+  margin-top: 30px;
+}
 
 .formulario {
   height: 60vh;
