@@ -53,7 +53,6 @@ label{
   background-color: rgba(255, 255, 255, 0.5);
   height: auto;
   padding: 25px;
-  box-shadow: 5px 5px 13px black inset, -5px -5px 13px black inset;
 }
 .terminar{
   height: 120px;

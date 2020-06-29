@@ -26,15 +26,15 @@ h5{
 h6{
   font-weight: bold;
   font-size: 24px;
-  text-shadow: 2px 2px 5px white, -2px -2px 5px white 
+  text-shadow: 2px 2px 5px white, -2px -2px 5px white
 }
 .resumen {
 
 }
 
 .totales{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .resultado h1{

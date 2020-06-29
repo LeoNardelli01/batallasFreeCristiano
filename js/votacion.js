@@ -11,31 +11,31 @@ $(function(){
   function tomarDatos(){
 
     //Participante 1
-    var p1_patron1 = parseInt($("#p1_patron1").val());
-    var p1_patron2 = parseInt($("#p1_patron2").val());
-    var p1_patron3 = parseInt($("#p1_patron3").val());
-    var p1_patron4 = parseInt($("#p1_patron4").val());
-    var p1_patron5 = parseInt($("#p1_patron5").val());
-    var p1_patron6 = parseInt($("#p1_patron6").val());
-    var p1_tecnica = parseInt($("#p1_tecnica").val());
-    var p1_flow = parseInt($("#p1_flow").val());
-    var p1_punch = parseInt($("#p1_punch").val());
-    var p1_dobletempo = parseInt($("#p1_dobletempo").val());
-    var p1_escena = parseInt($("#p1_escena").val());
+    var p1_patron1 = parseFloat($("#p1_patron1").val());
+    var p1_patron2 = parseFloat($("#p1_patron2").val());
+    var p1_patron3 = parseFloat($("#p1_patron3").val());
+    var p1_patron4 = parseFloat($("#p1_patron4").val());
+    var p1_patron5 = parseFloat($("#p1_patron5").val());
+    var p1_patron6 = parseFloat($("#p1_patron6").val());
+    var p1_tecnica = parseFloat($("#p1_tecnica").val());
+    var p1_flow = parseFloat($("#p1_flow").val());
+    var p1_punch = parseFloat($("#p1_punch").val());
+    var p1_dobletempo = parseFloat($("#p1_dobletempo").val());
+    var p1_escena = parseFloat($("#p1_escena").val());
     var p1_totalPatrones;
 
     //Participante 2
-    var p2_patron1 = parseInt($("#p2_patron1").val());
-    var p2_patron2 = parseInt($("#p2_patron2").val());
-    var p2_patron3 = parseInt($("#p2_patron3").val());
-    var p2_patron4 = parseInt($("#p2_patron4").val());
-    var p2_patron5 = parseInt($("#p2_patron5").val());
-    var p2_patron6 = parseInt($("#p2_patron6").val());
-    var p2_tecnica = parseInt($("#p2_tecnica").val());
-    var p2_flow = parseInt($("#p2_flow").val());
-    var p2_punch = parseInt($("#p2_punch").val());
-    var p2_dobletempo = parseInt($("#p2_dobletempo").val());
-    var p2_escena = parseInt($("#p2_escena").val());
+    var p2_patron1 = parseFloat($("#p2_patron1").val());
+    var p2_patron2 = parseFloat($("#p2_patron2").val());
+    var p2_patron3 = parseFloat($("#p2_patron3").val());
+    var p2_patron4 = parseFloat($("#p2_patron4").val());
+    var p2_patron5 = parseFloat($("#p2_patron5").val());
+    var p2_patron6 = parseFloat($("#p2_patron6").val());
+    var p2_tecnica = parseFloat($("#p2_tecnica").val());
+    var p2_flow = parseFloat($("#p2_flow").val());
+    var p2_punch = parseFloat($("#p2_punch").val());
+    var p2_dobletempo = parseFloat($("#p2_dobletempo").val());
+    var p2_escena = parseFloat($("#p2_escena").val());
     var p2_totalPatrones;
 
     p1_totalPatrones = p1_patron1 + p1_patron2 + p1_patron3 + p1_patron4 + p1_patron5 + p1_patron6;
@@ -58,6 +58,33 @@ $(function(){
 
 
   }
+
+  $("#btn-volver").click(function(e){
+    e.preventDefault();
+
+    swal({
+      title: "¿Terminar batalla?",
+      text: "si continua, se reiniciarán los datos",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+
+        swal("¡Terminando...!", {
+          icon: "success",
+        });
+        localStorage.clear();
+        $(location).attr('href', 'index.html');
+      } else {
+        e.preventDefault();
+        swal("Continua votando..");
+
+      }
+    });
+
+  });
 
 
 

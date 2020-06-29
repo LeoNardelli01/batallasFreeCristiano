@@ -10,22 +10,22 @@ $(function(){
     $(location).attr('href', 'index.html');
   });
 
-  var p1_totalPatrones = parseInt(localStorage.getItem('p1_totalPatrones'));
-  var p1_tecnica = parseInt(localStorage.getItem('p1_tecnica'));
-  var p1_flow = parseInt(localStorage.getItem('p1_flow'));
-  var p1_punch = parseInt(localStorage.getItem('p1_punch'));
-  var p1_dobletempo = parseInt(localStorage.getItem('p1_dobletempo'));
-  var p1_escena = parseInt(localStorage.getItem('p1_escena'));
+  var p1_totalPatrones = parseFloat(localStorage.getItem('p1_totalPatrones'));
+  var p1_tecnica = parseFloat(localStorage.getItem('p1_tecnica'));
+  var p1_flow = parseFloat(localStorage.getItem('p1_flow'));
+  var p1_punch = parseFloat(localStorage.getItem('p1_punch'));
+  var p1_dobletempo = parseFloat(localStorage.getItem('p1_dobletempo'));
+  var p1_escena = parseFloat(localStorage.getItem('p1_escena'));
 
   var p1_total = p1_totalPatrones + p1_tecnica + p1_flow + p1_punch + p1_dobletempo + p1_escena;
 
 
-  var p2_totalPatrones = parseInt(localStorage.getItem('p2_totalPatrones'));
-  var p2_tecnica = parseInt(localStorage.getItem('p2_tecnica'));
-  var p2_flow = parseInt(localStorage.getItem('p2_flow'));
-  var p2_punch = parseInt(localStorage.getItem('p2_punch'));
-  var p2_dobletempo = parseInt(localStorage.getItem('p2_dobletempo'));
-  var p2_escena = parseInt(localStorage.getItem('p2_escena'));
+  var p2_totalPatrones = parseFloat(localStorage.getItem('p2_totalPatrones'));
+  var p2_tecnica = parseFloat(localStorage.getItem('p2_tecnica'));
+  var p2_flow = parseFloat(localStorage.getItem('p2_flow'));
+  var p2_punch = parseFloat(localStorage.getItem('p2_punch'));
+  var p2_dobletempo = parseFloat(localStorage.getItem('p2_dobletempo'));
+  var p2_escena = parseFloat(localStorage.getItem('p2_escena'));
 
   var p2_total = p2_totalPatrones + p2_tecnica + p2_flow + p2_punch + p2_dobletempo + p2_escena;
 
