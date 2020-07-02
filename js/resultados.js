@@ -64,6 +64,7 @@ $(function(){
     $("#resultado").html("Ganó " + p1);
   } else {
     $("body").css('background', 'red');
+    $("#marca").css('color', 'black');
     $("#resultado").html("Ganó " + p2);
   }
 
